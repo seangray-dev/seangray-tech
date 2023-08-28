@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import ContactLink from "./ContactLink";
+import CustomLink from "./CustomLink";
 
 const social_links = [
   {
@@ -17,7 +17,7 @@ const social_links = [
 
 const Header = () => {
   return (
-    <header className="mt-5 flex flex-col gap-5 md:gap-24">
+    <header className="flex flex-col gap-5 md:gap-24">
       <div className="md:flex md:justify-between">
         <div className="mb-5 text-center md:mb-0">
           <Link
@@ -44,7 +44,7 @@ const Header = () => {
       </div>
       <div className="flex flex-col gap-6 text-center md:max-w-md md:gap-16 md:text-left xl:max-w-3xl">
         <h1 className="text-4xl font-bold md:text-7xl">
-          Nice to meet you! I'm <br />
+          Nice to meet you! I'm{" "}
           <span className="underline decoration-primary underline-offset-8">
             Sean Gray
           </span>
@@ -61,7 +61,7 @@ const Header = () => {
             filelaunch.io
           </Link>
         </p>
-        <ContactLink />
+        <CustomLink href={"#contact"} children={"Contact Me"} />
       </div>
     </header>
   );
