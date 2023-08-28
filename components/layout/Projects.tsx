@@ -15,7 +15,7 @@ import CustomLink from "../utils/CustomLink";
 
 const Projects = () => {
   return (
-    <section>
+    <section className="container">
       <div className="mb-10 flex items-center justify-between">
         <h2 className="text-4xl font-bold">Projects</h2>
         <CustomLink href={"#contact"} children={"Contact Me"} />

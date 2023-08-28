@@ -17,7 +17,7 @@ const social_links = [
 
 const Header = () => {
   return (
-    <header className="flex flex-col gap-5 md:gap-24">
+    <header className="container flex flex-col gap-5 md:gap-24">
       <div className="md:flex md:justify-between">
         <div className="mb-5 text-center md:mb-0">
           <Link
