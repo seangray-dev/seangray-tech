@@ -11,7 +11,7 @@ import data from "@/data/portfolio";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import CustomLink from "./CustomLink";
+import CustomLink from "../utils/CustomLink";
 
 const Projects = () => {
   return (

@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import CustomLink from "./CustomLink";
+import CustomLink from "../utils/CustomLink";
 
 const social_links = [
   {
