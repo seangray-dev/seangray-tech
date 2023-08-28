@@ -1,6 +1,8 @@
 export default [
   {
     title: "Sound Sprout",
+    description:
+      "A platform that allows music enthusiasts and creators to explore, preview, upload, purchase, and download sample packs.",
     imgUrl: "/assets/images/soundsprout.png",
     stack: [
       "Next JS",
@@ -16,6 +18,8 @@ export default [
   },
   {
     title: "Entertainment Web App",
+    description:
+      "A web application to search and bookmark movies and tv-series. Integrated with TMDB API.",
     imgUrl: "/assets/images/entertainment-web-app.png",
     stack: ["Next JS", "TailwindCSS", "TMDB API"],
     link: "https://entertainment-web-app-phi-ashy.vercel.app/",
@@ -23,6 +27,8 @@ export default [
   },
   {
     title: "Gravy Mixes",
+    description:
+      "My personal mixing engineer portfolio website to interact with clients.",
     imgUrl: "/assets/images/gravymixes.png",
     stack: ["Next JS", "TailwindCSS", "Make.com"],
     link: "https://www.gravymixes.com",
@@ -30,6 +36,8 @@ export default [
   },
   {
     title: "Audiophile",
+    description:
+      "A mock e-commerce website. This store prioritizes user experience, making it easy for customers to find and purchase the products they need.",
     imgUrl: "/assets/images/audiophile.jpeg",
     stack: ["React", "TailwindCSS", "Vite"],
     link: "https://audiophile-seangray-dev.vercel.app",
