@@ -17,7 +17,7 @@ export default [
     sourceCode: "https://github.com/seangray-dev/SoundSprout",
   },
   {
-    title: "Entertainment Web App",
+    title: "Entertainment App",
     description:
       "A web application to search and bookmark movies and tv-series. Integrated with TMDB API.",
     imgUrl: "/assets/images/entertainment-web-app.png",

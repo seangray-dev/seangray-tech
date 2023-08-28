@@ -1,10 +1,55 @@
+"use client";
+
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+
+// https://submit-form.com/UiPmNRU3
+
+const formSchema = z.object({
+  name: z.string().min(2, {
+    message: "Name must be at least 2 characters.",
+  }),
+  email: z.string().email({
+    message: "Please provide a valid email address.",
+  }),
+  message: z.string().min(10, {
+    message: "Message must be at least 10 characters.",
+  }),
+});
+
+function onSubmit(values: z.infer<typeof formSchema>) {
+  // Do something with the form values.
+  // ✅ This will be type-safe and validated.
+  console.log(values);
+}
 
 const Contact = () => {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
+
   return (
-    <section className="container">
-      <div className="mb-10 flex flex-col gap-5 text-center">
-        <h2 className="pt-14 text-4xl font-bold">Contact</h2>
+    <section className="border-b border-primary pb-20 pt-14 xl:grid xl:grid-cols-2 xl:gap-[220px]">
+      <div className="mb-10 flex flex-col gap-5 text-center xl:text-left">
+        <h2 className="text-4xl font-bold">Contact</h2>
         <p>
           Whether you're looking to collaborate on an exciting project or
           seeking a dedicated developer for your team, I'm eager to discuss how
@@ -12,48 +57,82 @@ const Contact = () => {
           opportunity.
         </p>
       </div>
-      <form
-        className="flex flex-col gap-8"
-        action="https://submit-form.com/UiPmNRU3"
-      >
-        <div className="">
-          <label aria-label="name" htmlFor="name" className="hidden">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
+      <Form {...form}>
+        <form
+          action="https://submit-form.com/UiPmNRU3"
+          method="POST"
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col space-y-8"
+        >
+          <FormField
+            control={form.control}
             name="name"
-            placeholder="Name"
-            required
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel aria-label="name" className="hidden">
+                  Name
+                </FormLabel>
+                <FormControl>
+                  <Input
+                    className="rounded-none border-b-primary bg-transparent "
+                    placeholder="Name"
+                    {...field}
+                  />
+                </FormControl>
+
+                <FormMessage />
+              </FormItem>
+            )}
           />
-        </div>
-        <div>
-          <label aria-label="email" htmlFor="email" className="hidden">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
+          <FormField
+            control={form.control}
             name="email"
-            placeholder="Email"
-            required
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel aria-label="email" className="hidden">
+                  Email
+                </FormLabel>
+                <FormControl>
+                  <Input
+                    className="rounded-none border-b-primary bg-transparent"
+                    placeholder="Email"
+                    type="email"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
           />
-        </div>
-        <div>
-          <label aria-label="message" htmlFor="message" className="hidden">
-            Message
-          </label>
-          <textarea
-            className="w-full bg-transparent"
-            id="message"
+
+          <FormField
+            control={form.control}
             name="message"
-            placeholder="Message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel aria-label="message" className="hidden">
+                  Message
+                </FormLabel>
+                <FormControl>
+                  <Textarea
+                    {...field}
+                    placeholder="Your message..."
+                    className=" rounded-none border-b-primary bg-transparent pb-16 outline-none"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <Button
+            className="self-end bg-transparent uppercase text-white underline decoration-primary underline-offset-8 transition-all  duration-300 hover:bg-transparent hover:text-primary"
+            type="submit"
+          >
+            Send Message
+          </Button>
+        </form>
+      </Form>
     </section>
   );
 };
