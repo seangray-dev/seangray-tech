@@ -8,6 +8,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { useToast } from "@/components/ui/use-toast";
 import { zodResolver } from "@hookform/resolvers/zod";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -15,8 +16,6 @@ import * as z from "zod";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-
-// https://submit-form.com/UiPmNRU3
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -30,13 +29,12 @@ const formSchema = z.object({
   }),
 });
 
-function onSubmit(values: z.infer<typeof formSchema>) {
-  // Do something with the form values.
-  // ✅ This will be type-safe and validated.
+async function onSubmit(values: z.infer<typeof formSchema>) {
   console.log(values);
 }
 
 const Contact = () => {
+  const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -46,8 +44,21 @@ const Contact = () => {
     },
   });
 
+  const handleSubmitWithToast = async (data: z.infer<typeof formSchema>) => {
+    try {
+      await onSubmit(data);
+      toast({ description: "Your message has been sent." });
+      form.reset();
+    } catch (error) {
+      toast({ description: "An error occurred. Please try again." });
+    }
+  };
+
   return (
-    <section className="border-b border-primary pb-20 pt-14 xl:grid xl:grid-cols-2 xl:gap-[220px]">
+    <section
+      id="contact"
+      className="border-b border-primary pb-20 pt-14 xl:grid xl:grid-cols-2 xl:gap-[220px]"
+    >
       <div className="mb-10 flex flex-col gap-5 text-center xl:text-left">
         <h2 className="text-4xl font-bold">Contact</h2>
         <p>
@@ -61,7 +72,7 @@ const Contact = () => {
         <form
           action="https://submit-form.com/UiPmNRU3"
           method="POST"
-          onSubmit={form.handleSubmit(onSubmit)}
+          onSubmit={form.handleSubmit(handleSubmitWithToast)}
           className="flex flex-col space-y-8"
         >
           <FormField

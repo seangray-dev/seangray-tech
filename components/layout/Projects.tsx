@@ -52,8 +52,8 @@ const Projects = () => {
                 </p>
               </CardContent>
               <CardFooter className="mt-auto flex gap-8">
-                <CustomLink href={link} children={"View Project"} />
-                <CustomLink href={sourceCode} children={"View Code"} />
+                <CustomLink href={link} children={"Live Site"} newTab />
+                <CustomLink href={sourceCode} children={"View Code"} newTab />
               </CardFooter>
             </Card>
           );
