@@ -13,7 +13,7 @@ export default [
       "Pytorch",
       "Stripe",
     ],
-    link: "",
+    link: "https://www.youtube.com/embed/QweGtTM0H_w",
     sourceCode: "https://github.com/seangray-dev/SoundSprout",
   },
   {
