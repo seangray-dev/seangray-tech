@@ -30,7 +30,21 @@ const formSchema = z.object({
 });
 
 async function onSubmit(values: z.infer<typeof formSchema>) {
-  console.log(values);
+  fetch("https://submit-form.com/UiPmNRU3", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(values),
+  })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+      throw error;
+    });
 }
 
 const Contact = () => {
@@ -70,7 +84,6 @@ const Contact = () => {
       </div>
       <Form {...form}>
         <form
-          action="https://submit-form.com/UiPmNRU3"
           method="POST"
           onSubmit={form.handleSubmit(handleSubmitWithToast)}
           className="flex flex-col space-y-8"

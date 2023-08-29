@@ -17,7 +17,7 @@ const Header = () => {
           .
         </h1>
         <p className="font-medium md:text-[18px]">
-          Based in Canada, I'm a web/software developer and founder of{" "}
+          Based in Canada, I'm a fullstack web/software developer and founder of{" "}
           <Link
             className="text-primary transition-all duration-300 hover:text-white hover:underline"
             href={"https://filelaunch.io"}
