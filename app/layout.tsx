@@ -1,3 +1,4 @@
+import Particles from "@/components/particles";
 import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
@@ -20,8 +21,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} dark flex h-screen flex-col`}>
+      <body
+        className={`${montserrat.className} dark relative flex h-full flex-col`}
+      >
         {children}
+        <Particles
+          className="animate-fade-in absolute inset-0 -z-10 h-full"
+          quantity={5000}
+        />
         <Toaster />
       </body>
     </html>
