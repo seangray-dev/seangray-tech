@@ -76,10 +76,10 @@ const Contact = () => {
       <div className="mb-10 flex flex-col gap-5 text-center xl:text-left">
         <h2 className="text-4xl font-bold">Contact</h2>
         <p>
-          Whether you're looking to collaborate on an exciting project or
-          seeking a dedicated developer for your team, I'm eager to discuss how
-          I can contribute. Drop me a message, and I'll respond at my earliest
-          opportunity.
+          Whether you&apos;re looking to collaborate on an exciting project or
+          seeking a dedicated developer for your team, I&apos;m eager to discuss
+          how I can contribute. Drop me a message, and I&apos;ll respond at my
+          earliest opportunity.
         </p>
       </div>
       <Form {...form}>

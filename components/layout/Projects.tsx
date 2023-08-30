@@ -18,7 +18,7 @@ const Projects = () => {
     <section className="animate-fade-left container">
       <div className="mb-10 flex items-center justify-between">
         <h2 className="text-4xl font-bold">Projects</h2>
-        <CustomLink href={"#contact"} children={"Contact Me"} />
+        <CustomLink href={"#contact"}>Contact Me</CustomLink>
       </div>
       <div className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-[60px] md:gap-x-5">
         {data.map((project, index) => {
@@ -55,8 +55,12 @@ const Projects = () => {
                 </p>
               </CardContent>
               <CardFooter className="mt-auto flex gap-8">
-                <CustomLink href={link} children={"Live Site"} newTab />
-                <CustomLink href={sourceCode} children={"View Code"} newTab />
+                <CustomLink href={link} newTab>
+                  Live Site
+                </CustomLink>
+                <CustomLink href={sourceCode} newTab>
+                  View Code
+                </CustomLink>
               </CardFooter>
             </Card>
           );

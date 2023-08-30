@@ -25,9 +25,10 @@ const Nav = () => {
         </Link>
       </div>
       <div className="flex justify-center gap-10">
-        {social_links.map((link) => {
+        {social_links.map((link, index) => {
           return (
             <a
+              key={index}
               className="text-2xl transition-all duration-300 hover:text-primary"
               href={link.href}
               target="_blank"
