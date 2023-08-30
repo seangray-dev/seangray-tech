@@ -15,7 +15,7 @@ const social_links = [
 
 const Nav = () => {
   return (
-    <div className="md:flex md:justify-between">
+    <div className="animate-fade-right md:flex md:justify-between">
       <div className="mb-5 text-center md:mb-0">
         <Link
           className="text-3xl font-bold transition-all duration-300 hover:text-primary"

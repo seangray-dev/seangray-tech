@@ -15,7 +15,7 @@ import CustomLink from "../utils/CustomLink";
 
 const Projects = () => {
   return (
-    <section className="container">
+    <section className="animate-fade-left container">
       <div className="mb-10 flex items-center justify-between">
         <h2 className="text-4xl font-bold">Projects</h2>
         <CustomLink href={"#contact"} children={"Contact Me"} />
@@ -26,7 +26,10 @@ const Projects = () => {
             project;
 
           return (
-            <Card className="flex h-full flex-col gap-5" key={index}>
+            <Card
+              className="flex h-full flex-col gap-5 transition-all duration-300 hover:scale-[102%]"
+              key={index}
+            >
               <CardHeader className="flex flex-col gap-5">
                 <CardTitle>{title}</CardTitle>
                 <CardDescription>{description}</CardDescription>

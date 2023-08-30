@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="container flex flex-col gap-5 md:gap-24">
       <Nav />
-      <div className="flex flex-col gap-6 text-center md:max-w-md md:gap-16 md:text-left xl:max-w-3xl">
+      <div className="animate-title flex flex-col gap-6 text-center md:max-w-md md:gap-16 md:text-left xl:max-w-3xl">
         <h1 className="text-4xl font-bold md:text-7xl">
           Nice to meet you! I'm{" "}
           <span className="underline decoration-primary underline-offset-8">

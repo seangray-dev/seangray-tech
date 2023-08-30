@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="border-b border-primary pb-20 pt-14 xl:grid xl:grid-cols-2 xl:gap-[220px]"
+      className="animate-fade-left border-b border-primary pb-20 pt-14 xl:grid xl:grid-cols-2 xl:gap-[220px]"
     >
       <div className="mb-10 flex flex-col gap-5 text-center xl:text-left">
         <h2 className="text-4xl font-bold">Contact</h2>
