@@ -31,7 +31,7 @@ const Projects = () => {
                 <CardTitle>{title}</CardTitle>
                 <CardDescription>{description}</CardDescription>
                 <Image
-                  className="max-h-[250px] w-full object-cover object-top lg:max-h-[400px]"
+                  className="h-auto max-h-[250px] w-full object-cover object-top lg:max-h-[400px]"
                   src={imgUrl}
                   alt={title}
                   width={540}
