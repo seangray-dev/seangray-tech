@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         {children}
         <Particles
-          className="animate-fade-in absolute inset-0 -z-10 h-full"
+          className="absolute inset-0 -z-10 hidden h-full animate-fade-in md:block"
           quantity={5000}
         />
         <Toaster />
