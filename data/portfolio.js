@@ -1,5 +1,20 @@
 export default [
   {
+    title: "MoodWav",
+    description:
+      "An innovative Spotify-connected application designed to enhance the listening experience by providing personalized mood profiles based on users’ recent listening history",
+    imgUrl: "/assets/images/moodwav.png",
+    stack: [
+      "Next JS",
+      "TypeScript",
+      "TailwindCSS",
+      "Supabase",
+      "Spotify Web API",
+    ],
+    link: "https://www.moodwav.app",
+    sourceCode: "https://github.com/seangray-dev/MoodWav",
+  },
+  {
     title: "Sound Sprout",
     description:
       "A platform that allows music enthusiasts and creators to explore, preview, upload, purchase, and download sample packs.",
@@ -24,15 +39,6 @@ export default [
     stack: ["Next JS", "TailwindCSS", "TMDB API"],
     link: "https://entertainment-web-app-phi-ashy.vercel.app/",
     sourceCode: "https://github.com/seangray-dev/Entertainment-Web-App",
-  },
-  {
-    title: "Gravy Mixes",
-    description:
-      "My personal mixing engineer portfolio website to interact with clients.",
-    imgUrl: "/assets/images/gravymixes.png",
-    stack: ["Next JS", "TailwindCSS", "Make.com"],
-    link: "https://www.gravymixes.com",
-    sourceCode: "https://github.com/seangray-dev/gravy-mixes",
   },
   {
     title: "Audiophile",
