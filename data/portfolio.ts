@@ -2,7 +2,7 @@ export default [
   {
     title: "MoodWav",
     description:
-      "An innovative Spotify-connected application designed to enhance the listening experience by providing personalized mood profiles based on users’ recent listening history",
+      "An innovative Spotify-connected application designed to enhance the listening experience by providing mood profiles based on users’ recent listening history",
     imgUrl: "/assets/images/moodwav.png",
     stack: [
       "Next JS",
