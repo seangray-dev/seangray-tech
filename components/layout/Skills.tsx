@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className="container flex flex-col gap-6">
+    <section className="container flex animate-fade-right flex-col gap-6">
       <h2 className="text-4xl font-bold">Skills</h2>
       <div className="flex w-full flex-wrap items-center gap-2 md:gap-7">
         {skillIcons.map((icon, index) => (
@@ -19,7 +19,7 @@ const Skills = () => {
           >
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger>
+                <TooltipTrigger className="hover:cursor-default">
                   <Image
                     src={icon["icon-path"]}
                     alt={icon.skill}
