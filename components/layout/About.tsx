@@ -12,7 +12,7 @@ const About = () => {
         <div className="flex flex-col gap-4 text-center md:text-left">
           <p>
             At the heart of my work lies a fusion of music and technology,
-            sparked by my early days as a mixing engineer in Toronto's music
+            sparked by my early days as a mixing engineer in Toronto&#39;s music
             scene. I found my rhythm at{" "}
             <Link
               target="_blank"
@@ -39,7 +39,7 @@ const About = () => {
               className="underline transition-all duration-300 hover:text-primary"
               href={"https://6figurecreative.com/podcast/"}
             >
-              '6 Figure Creative Podcast'
+              &#39;6 Figure Creative Podcast&#39;
             </Link>
             . This not only streamlined my workflow but also ignited my passion
             for making technology accessible to creatives like me. That&apos;s
