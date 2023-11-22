@@ -9,8 +9,10 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <section className="container flex animate-fade-right flex-col gap-6">
-      <h2 className="text-4xl font-bold">Skills</h2>
+    <section className="container flex animate-fade-right flex-col">
+      <div className="mb-10 flex items-center justify-between border-b border-primary pb-2">
+        <h2 className="text-4xl font-bold">Skills</h2>
+      </div>
       <div className="flex w-full flex-wrap items-center gap-2 md:gap-7">
         {skillIcons.map((icon, index) => (
           <div

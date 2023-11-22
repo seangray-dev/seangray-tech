@@ -15,11 +15,8 @@ import CustomLink from "../utils/CustomLink";
 const Projects = () => {
   return (
     <section className="container animate-fade-left">
-      <div className="mb-10 flex items-center justify-between">
+      <div className="mb-10 flex items-center justify-between border-b border-primary pb-2">
         <h2 className="text-4xl font-bold">Projects</h2>
-        <CustomLink className="hidden md:block" href={"#contact"}>
-          Contact Me
-        </CustomLink>
       </div>
       <div className="flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-[60px] md:gap-x-5">
         {data.map((project, index) => {
