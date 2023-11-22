@@ -42,7 +42,8 @@ const About = () => {
               '6 Figure Creative Podcast'
             </Link>
             . This not only streamlined my workflow but also ignited my passion
-            for making technology accessible to creatives like me. That's how{" "}
+            for making technology accessible to creatives like me. That&apos;s
+            how{" "}
             <Link
               target="_blank"
               className="underline transition-all duration-300 hover:text-primary"
@@ -54,13 +55,13 @@ const About = () => {
             audio professionals as an alternative solution to file management.
           </p>
           <p>
-            When I'm not immersed in developing or mixing tracks, you'll often
-            find me at the gym. I find That lifting weights and training for
-            marathons are my favourite way of staying energized and focused. I'm
-            a firm believer in the synergy between physical fitness and mental
-            acuity, and I find that pushing my limits in the gym fuels my
-            creativity and endurance in both my professional and personal
-            pursuits.
+            When I&apos;m not immersed in developing or mixing tracks,
+            you&apos;ll often find me at the gym. I find That lifting weights
+            and training for marathons are my favourite way of staying energized
+            and focused. I&apos;m a firm believer in the synergy between
+            physical fitness and mental acuity, and I find that pushing my
+            limits in the gym fuels my creativity and endurance in both my
+            professional and personal pursuits.
           </p>
         </div>
         <div className="flex justify-end">
