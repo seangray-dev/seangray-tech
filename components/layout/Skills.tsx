@@ -11,10 +11,10 @@ const Skills = () => {
   return (
     <section className="container flex flex-col gap-6">
       <h2 className="text-4xl font-bold">Skills</h2>
-      <div className="flex flex-wrap items-center gap-6">
+      <div className="flex w-full flex-wrap items-center gap-2 md:gap-7">
         {skillIcons.map((icon, index) => (
           <div
-            className="transition-all duration-300 hover:scale-110"
+            className="w-1/12 transition-all duration-300 md:w-fit md:hover:scale-110"
             key={index}
           >
             <TooltipProvider>
