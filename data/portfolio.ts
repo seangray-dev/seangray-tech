@@ -1,5 +1,13 @@
 export default [
   {
+    title: "Curate Health",
+    description: `Led a development team to build a scalable & accessible health clinic website focusing on dynamic content, responsive design, and best practices for performance and accessibility.`,
+    imgUrl: "/assets/images/curate-health.png",
+    stack: ["Next JS", "TypeScript", "TailwindCSS", "Sanity CMS", "WCAG-AA"],
+    link: "https://curate-health.vercel.app/",
+    sourceCode: "https://github.com/seangray-dev/curate-health",
+  },
+  {
     title: "MoodWav",
     description:
       "An innovative Spotify-connected application designed to enhance the listening experience by providing mood profiles based on users’ recent listening history",
@@ -40,13 +48,13 @@ export default [
     link: "https://entertainment-web-app-phi-ashy.vercel.app/",
     sourceCode: "https://github.com/seangray-dev/Entertainment-Web-App",
   },
-  {
-    title: "Audiophile",
-    description:
-      "A mock e-commerce website. This store prioritizes user experience, making it easy for customers to find and purchase the products they need.",
-    imgUrl: "/assets/images/audiophile.jpeg",
-    stack: ["React", "TailwindCSS", "Vite"],
-    link: "https://audiophile-seangray-dev.vercel.app",
-    sourceCode: "https://github.com/seangray-dev/Audiophile",
-  },
+  // {
+  //   title: "Audiophile",
+  //   description:
+  //     "A mock e-commerce website. This store prioritizes user experience, making it easy for customers to find and purchase the products they need.",
+  //   imgUrl: "/assets/images/audiophile.jpeg",
+  //   stack: ["React", "TailwindCSS", "Vite"],
+  //   link: "https://audiophile-seangray-dev.vercel.app",
+  //   sourceCode: "https://github.com/seangray-dev/Audiophile",
+  // },
 ];
