@@ -30,7 +30,7 @@ const formSchema = z.object({
 });
 
 async function onSubmit(values: z.infer<typeof formSchema>) {
-  fetch("https://www.formail.dev/submit/j578t76y1pfk3qnttgt4pc9p296n4hh3", {
+  fetch("https://submit-form.com/UiPmNRU3", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
