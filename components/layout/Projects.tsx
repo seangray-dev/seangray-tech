@@ -79,7 +79,7 @@ const Projects = () => {
 
             return (
               <Card
-                className="flex h-full flex-col gap-5 transition-all duration-300 hover:scale-[102%]"
+                className="flex h-full w-full flex-col gap-5 transition-all duration-300 hover:scale-[102%] md:max-w-[50%]"
                 key={index}
               >
                 <CardHeader className="flex flex-col gap-5">
