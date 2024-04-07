@@ -41,27 +41,17 @@ const About = () => {
             >
               &#39;6 Figure Creative Podcast&#39;
             </Link>
-            . This not only streamlined my workflow but also ignited my passion
-            for making technology accessible to creatives like me. That&apos;s
-            how{" "}
-            <Link
-              target="_blank"
-              className="underline transition-all duration-300 hover:text-primary"
-              href={"https://filelaunch.io"}
-            >
-              FileLaunch
-            </Link>{" "}
-            was born - my venture to providing a macOS application tailored for
-            audio professionals as an alternative solution to file management.
+            . This newfound passion for innovation led me to venturing into the
+            groundbreaking field of AI, blockchain and Web3 technologies.
           </p>
           <p>
-            When I&apos;m not immersed in developing or mixing tracks,
-            you&apos;ll often find me at the gym. I find That lifting weights
-            and training for marathons are my favourite way of staying energized
-            and focused. I&apos;m a firm believer in the synergy between
-            physical fitness and mental acuity, and I find that pushing my
-            limits in the gym fuels my creativity and endurance in both my
-            professional and personal pursuits.
+            When I&apos;m not immersed in developing, you&apos;ll often find me
+            at the gym. I find That lifting weights and training for marathons
+            are my favourite way of staying energized and focused. I&apos;m a
+            firm believer in the synergy between physical fitness and mental
+            acuity, and I find that pushing my limits in the gym fuels my
+            creativity and endurance in both my professional and personal
+            pursuits.
           </p>
         </div>
         <div className="flex justify-end">
