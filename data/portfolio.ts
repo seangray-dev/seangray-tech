@@ -8,6 +8,23 @@ export const projectsWeb2 = [
     sourceCode: "https://github.com/seangray-dev/formail-app",
   },
   {
+    title: "BrainChain Games",
+    description: `Unlock an NFT by completing 5 games powered by AI: hangman, memory cards, decryption, trivia, & wordsearch`,
+    imgUrl: "/assets/images/brainchaingames.gif",
+    stack: [
+      "Next JS",
+      "TypeScript",
+      "TailwindCSS",
+      "Hardhat",
+      "Solidity",
+      "thirdweb",
+      "NFT",
+      "OpenAI",
+    ],
+    link: "https://brainchain-games.vercel.app/",
+    sourceCode: "https://github.com/seangray-dev/brainchain-games",
+  },
+  {
     title: "MoodWav",
     description:
       "An innovative Spotify-connected application designed to enhance the listening experience by providing mood profiles based on users recent listening history",
@@ -39,17 +56,26 @@ export const projectsWeb2 = [
     link: "https://www.youtube.com/embed/QweGtTM0H_w",
     sourceCode: "https://github.com/seangray-dev/SoundSprout",
   },
-  {
-    title: "Curate Health",
-    description: `Led a development team to build a scalable & accessible health clinic website focusing on dynamic content, responsive design, and best practices for performance and accessibility.`,
-    imgUrl: "/assets/images/curate-health.png",
-    stack: ["Next JS", "TypeScript", "TailwindCSS", "Sanity CMS", "WCAG-AA"],
-    link: "https://curate-health.vercel.app/",
-    sourceCode: "https://github.com/seangray-dev/curate-health",
-  },
 ];
 
 export const projectsWeb3 = [
+  {
+    title: "BrainChain Games",
+    description: `Unlock an NFT by completing 5 games powered by AI: hangman, memory cards, decryption, trivia, & wordsearch`,
+    imgUrl: "/assets/images/brainchaingames.gif",
+    stack: [
+      "Next JS",
+      "TypeScript",
+      "TailwindCSS",
+      "Hardhat",
+      "Solidity",
+      "thirdweb",
+      "NFT",
+      "OpenAI",
+    ],
+    link: "https://brainchain-games.vercel.app/",
+    sourceCode: "https://github.com/seangray-dev/brainchain-games",
+  },
   {
     title: "DigiTally",
     description: `DigitTally allows users to increment or decrement a counter stored on the blockchain, showcasing the basics of smart contract interactions.`,
