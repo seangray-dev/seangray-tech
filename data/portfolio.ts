@@ -1,5 +1,24 @@
 export const projectsWeb2 = [
   {
+    title: "Somnyx - AI Dream Interpreter & Journal",
+    description:
+      "Somynx is a PWA (Progressive Web App) that allows users to log their dreams and purchase credits to use to have their dreams interpreted by AI.",
+    imgUrl: "/assets/images/somnyx.jpeg",
+    stack: [
+      "Next JS",
+      "TypeScript",
+      "TailwindCSS",
+      "Covnex",
+      "Resend",
+      "Clerk Auth",
+      "Stripe",
+      "Open AI",
+      "Posthog",
+    ],
+    link: "https://www.somnyx.app",
+    sourceCode: "https://github.com/seangray-dev/somnyx",
+  },
+  {
     title: "Formail.dev",
     description: `A form submission and management platform with instant email notifications, dynamic data handling & spam protection. Ideal for developers & small busineses.`,
     imgUrl: "/assets/images/formail-app.png",
@@ -23,21 +42,6 @@ export const projectsWeb2 = [
     ],
     link: "https://brainchain-games.vercel.app/",
     sourceCode: "https://github.com/seangray-dev/brainchain-games",
-  },
-  {
-    title: "MoodWav",
-    description:
-      "An innovative Spotify-connected application designed to enhance the listening experience by providing mood profiles based on users recent listening history",
-    imgUrl: "/assets/images/moodwav.png",
-    stack: [
-      "Next JS",
-      "TypeScript",
-      "TailwindCSS",
-      "Supabase",
-      "Spotify Web API",
-    ],
-    link: "https://www.moodwav.app",
-    sourceCode: "https://github.com/seangray-dev/MoodWav",
   },
   {
     title: "Sound Sprout",
