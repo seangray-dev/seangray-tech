@@ -43,23 +43,6 @@ export const projectsWeb2 = [
     link: "https://brainchain-games.vercel.app/",
     sourceCode: "https://github.com/seangray-dev/brainchain-games",
   },
-  {
-    title: "Sound Sprout",
-    description:
-      "A platform that allows music enthusiasts and creators to explore, preview, upload, purchase, and download sample packs.",
-    imgUrl: "/assets/images/soundsprout.png",
-    stack: [
-      "Next JS",
-      "TailwindCSS",
-      "TypeScript",
-      "Django",
-      "Python",
-      "Pytorch",
-      "Stripe",
-    ],
-    link: "https://www.youtube.com/embed/QweGtTM0H_w",
-    sourceCode: "https://github.com/seangray-dev/SoundSprout",
-  },
 ];
 
 export const projectsWeb3 = [
