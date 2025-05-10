@@ -1,16 +1,17 @@
-import { Github, Linkedin } from "lucide-react";
+import { FileText, FileTextIcon, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
 const social_links = [
   {
+    icon: <FileTextIcon size={30} />,
+    href: "https://flowcv.com/resume/6dw5jn6f6t",
+  },
+  {
     icon: <Linkedin size={30} />,
     href: "https://www.linkedin.com/in/seangray-dev/",
   },
-  {
-    icon: <Github size={30} />,
-    href: "https://github.com/seangray-dev",
-  },
+  { icon: <Github size={30} />, href: "https://github.com/seangray-dev" },
 ];
 
 const Nav = () => {
@@ -24,7 +25,7 @@ const Nav = () => {
           seangray
         </Link>
       </div>
-      <div className="flex justify-center gap-10">
+      <div className="flex justify-center gap-4">
         {social_links.map((link, index) => {
           return (
             <a
