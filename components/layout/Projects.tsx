@@ -36,8 +36,10 @@ const Projects = () => {
                   key={index}
                 >
                   <CardHeader className="flex flex-col gap-5">
-                    <CardTitle>{title}</CardTitle>
-                    <CardDescription>{description}</CardDescription>
+                    <CardTitle className="text-pretty">{title}</CardTitle>
+                    <CardDescription className="text-pretty text-muted-foreground">
+                      {description}
+                    </CardDescription>
                     <Image
                       className="h-auto max-h-[250px] w-full object-cover object-top lg:max-h-[400px]"
                       src={imgUrl}
@@ -84,8 +86,10 @@ const Projects = () => {
                   key={index}
                 >
                   <CardHeader className="flex flex-col gap-5">
-                    <CardTitle>{title}</CardTitle>
-                    <CardDescription>{description}</CardDescription>
+                    <CardTitle className="text-pretty">{title}</CardTitle>
+                    <CardDescription className="text-pretty text-muted-foreground">
+                      {description}
+                    </CardDescription>
                     <Image
                       className="h-auto max-h-[250px] w-full object-cover object-top lg:max-h-[400px]"
                       src={imgUrl}
