@@ -75,7 +75,7 @@ const Contact = () => {
     >
       <div className="mb-10 flex flex-col gap-5 text-center xl:text-left">
         <h2 className="text-4xl font-bold">Contact</h2>
-        <p>
+        <p className="mx-auto max-w-[65ch] text-pretty">
           Whether you&apos;re looking to collaborate on an exciting project or
           seeking a dedicated developer for your team, I&apos;m eager to discuss
           how I can contribute. Drop me a message, and I&apos;ll respond at my
@@ -86,7 +86,7 @@ const Contact = () => {
         <form
           method="POST"
           onSubmit={form.handleSubmit(handleSubmitWithToast)}
-          className="flex flex-col space-y-8"
+          className="mx-auto flex max-w-lg flex-col space-y-8"
         >
           <FormField
             control={form.control}
@@ -141,7 +141,7 @@ const Contact = () => {
                   <Textarea
                     {...field}
                     placeholder="Your message..."
-                    className=" rounded-none border-b-primary bg-transparent pb-16 outline-none"
+                    className="resize-none rounded-none border-b-primary bg-transparent pb-16 outline-none"
                   />
                 </FormControl>
                 <FormMessage />
