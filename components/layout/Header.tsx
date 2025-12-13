@@ -23,8 +23,8 @@ const Header = () => {
           </h2>
           <p>
             Based in Toronto, Canada, I&apos;m a full-stack web/software
-            developer with over 3+ years of experience, specializing in React and
-            Node.js.
+            developer with over 3+ years of experience, specializing in React
+            and Node.js.
           </p>
           <p>Actively seeking opportunities in Web and Software Development.</p>
         </div>
